@@ -1,0 +1,60 @@
+body {
+  background-color: #ededed;
+  color: #000000;
+}
+
+header {
+  /* 粗体 */
+  font-weight: bold;
+  font-size: 1.2rem;
+  /* 固定在上方 */
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+header>div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.mr {
+  margin-right: 1.5rem;
+}
+
+main{
+  /* fixed定位会挡住相邻的元素，需要调节间距避开 */
+  margin-top: 2.6rem;
+  background-color: #ffffff;
+}
+
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+
+footer>div{
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0px;
+  border-top: 1px solid #dcdcdc;
+}
+
+/* 
+选择器1 选择器2
+选择器中间有空格，表示里面的元素
+例如： footer div {}
+表示只要是在footer里面的div，不论是多少层级都会生效
+不同于>号只能有一级
+*/
+footer .iconfont {
+  font-size: 2rem;
+}
+
+.active-icon {
+  /* 激活的图标 */
+  color: #08c261;
+}
