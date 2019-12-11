@@ -63,38 +63,3 @@ footer .iconfont {
   /* 激活的图标 */
   color: #08c261;
 }
-
-/* 主区域聊天样式 */
-main>section {
-  display: flex;
-}
-
-.flex1 {
-  flex: 1;
-}
-
-/* 左边是方块大小的图片，用icon调整字体大小模拟 */
-.logo {
-  font-size: 3.5rem;
-}
-
-/* 右边聊天区域 */
-.main-right {
-  border-bottom: 1px solid #dcdcdc;
-}
-
-.main-padding {
-  padding: 0.2rem;
-}
-
-.main-right>div {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.2rem 0px;
-}
-
-/* 辅助文本样式 */
-.second-text {
-  color: #999999;
-  font-size: 0.8em;
-}
