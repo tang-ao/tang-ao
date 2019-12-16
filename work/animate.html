@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>动画</title>
+  <!-- 
+    引入animate.css
+    官方网页：https://daneden.github.io/animate.css/
+    源码和教程：https://github.com/daneden/animate.css
+  -->
+  <link rel="stylesheet" href="animate.css">
+  <style>
+    .mdiv {
+      animation-duration: 3s;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    必要的class：animated，表示套用动画
+    第二个必须的class是动画效果的名称
+    例如，rotateInDownLeft 左上旋转进入
+    必须要是块元素
+    如果想要定制效果，可以加自己的class来控制
+    比如下面的mydiv类就是控制动画的时长
+    如果需要无限循环动画，加infinite类
+  -->
+   <div class="animated rotateInDownLeft infinite">
+     第三方动画animate.css
+   </div>
+   <!-- 也可以通过slow，fast控制动画时长 -->
+   <div class="animated flash slow">闪动</div>
+</body>
+</html>

@@ -63,3 +63,49 @@ footer .iconfont {
   /* 激活的图标 */
   color: #08c261;
 }
+
+/* 通讯录行 */
+.line {
+  display: flex;
+}
+
+.line .iconfont {
+  font-size: 3rem;
+}
+
+/* 
+  伪类 获取第一个子元素 :first-child
+  .line是class >里面的第一级
+  :first-child 表示第一个
+*/
+.line>div:first-child {
+  padding: 0.5rem;
+}
+
+/* 伪类 获取最后一个子元素 :last-child */
+.line>div:last-child {
+  padding: 0.5rem;
+  border-bottom: 1px solid #dcdcdc;
+  flex: 1;
+  /* 行高(行高大于字的大小，字会在行的垂直居中） */
+  line-height: 3rem;
+  font-size: 1.2em;
+}
+
+/* 锚点行的样式 */
+.name {
+  background-color: #ededed;
+  color: #b2b2b2;
+  padding: 0.5rem;
+}
+
+/* 导航 */
+nav {
+  position: fixed;
+  right: 0px;
+  top: 2rem;
+  margin: 0.2rem;
+  /* 宽度是1em，字就只能一行一个 */
+  width: 1em;
+  z-index: 10;
+}
