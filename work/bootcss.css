@@ -109,3 +109,65 @@ main {
 .mylink:hover {
   color: #ff0000;
 }
+
+.project-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-title>div {
+  border-bottom: 1px solid #9d9d9d;
+  padding: 3rem 4rem 1rem 4rem;
+  font-size: 2.5rem;
+}
+
+.project-second-title {
+  font-size: 1rem;
+  color: #555555;
+  padding-top: 0.5rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.projects>div {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  border: 1px solid #dddddd;
+  padding: 0.2rem;
+  text-align: center;
+  width: 22%;
+  margin-bottom: 2rem;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project a {
+  color: #337ab7;
+  text-decoration: none;
+  font-size: 2rem;
+  display: inline-block;
+  padding: 2rem 0px 1rem 0px;
+}
+
+.project a:hover {
+  color: #2269ab;
+}
+
+.project-info {
+  font-size: 1.1em;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+}
+
