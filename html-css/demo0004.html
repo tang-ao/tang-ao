@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单元素</title>
+  <link rel="stylesheet" href="demo0004.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body>
+  <section class="container">
+    表单元素重点就是有值（value）
+    <hr>
+    背景色配置：
+    <input type="text" id="txtRed" placeholder="红色（0-255）">
+    <input type="text" id="txtGreen" placeholder="绿色（0-255）">
+    <input type="text" id="txtBlue" placeholder="蓝色（0-255）">
+    <input type="text" id="txtAlpha" placeholder="不透明度（0-1）">
+    <button id="btnColor">保存背景颜色</button>
+    <span id="paBuletion"></span>
+    <hr>
+    <!-- <img src="../javascript/images/04.jpg" alt=""> -->
+    <!-- <img src="../javascript/images/caihong.jpg" alt=""> -->
+    <!-- <img src="../javascript/images/dashan.jpg" alt=""> -->
+    <select id="selImg">
+      <option value="../javascript/images/04.jpg">背景图片一</option>
+      <option value="../javascript/images/caihong.jpg">背景图片二</option>
+      <option value="../javascript/images/dashan.jpg">背景图片三</option>
+    </select>
+
+    <!-- 切换动画效果 -->
+    <div id="divAnimate">动画演示div</div>
+    <select id="selAnimate">
+      <option value="bounceInLeft">动画一</option>
+      <option value="bounceInRight">动画二</option>
+      <option value="jackInTheBox">动画三</option>
+    </select>
+  </section>
+
+  <script src="demo0004.js"></script>
+</body>
+
+</html>

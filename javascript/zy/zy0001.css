@@ -1,0 +1,11 @@
+.v1 {
+  color: #ff0000;
+  /* 粗体 */
+  font-weight: bold;
+}
+
+.v2 {
+  color: #0000ff;
+  /* 斜体 */
+  font-style: italic;
+}

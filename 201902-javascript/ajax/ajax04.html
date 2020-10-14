@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ajax复习-ajax查询数据生成表格</title>
+</head>
+<body>
+  <!-- 分页控制 -->
+  <select id="selPageSize">
+    <option value="5">每页5比记录</option>
+    <option value="10">每页10比记录</option>
+  </select>
+  
+  <button onclick="query()">刷新</button>
+  <!-- 商品信息表格 -->
+  <table border="1">
+    <thead>
+      <tr>
+        <th>商品名称</th>
+        <th>商品信息</th>
+        <th>价格</th>
+        <th>数量</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody id="tbData">
+      <!-- <tr>
+        <td>可口可乐</td>
+        <td>可口可乐呀！</td>
+        <td>1.9</td>
+        <td>10000</td>
+        <td>
+          <button>删除</button>
+        </td>
+      </tr> -->
+    </tbody>
+  </table>
+
+
+  <script src="js/qs.min.js"></script>
+  <script src="js/axios.min.js"></script>
+  <script src="js/tools.js"></script>
+
+  <script src="js/ajax04.js"></script>
+</body>
+</html>

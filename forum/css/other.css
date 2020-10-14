@@ -1,0 +1,100 @@
+#divLoading {
+  display: none;
+}
+
+#divEmployee {
+  display: none;
+}
+
+/* 动态提示信息 */
+#divMessage {
+  /* 不管屏幕滚动到哪里，都固定住位置 */
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 0%;
+  left: 0%;
+  transform: translateY(-105%);
+}
+
+#divMessage > div {
+  border: 1px solid #ffff00;
+  padding: 1rem;
+}
+
+.message {
+  animation: message 5s infinite;
+}
+
+@keyframes message {
+  0% {
+    transform: translateY(-100%);
+  }
+  20% {
+    transform: translateY(200%);
+  }
+  80% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+#divContainer {
+  /* 绝对定位容器 */
+  position: relative;
+  height: 400px;
+}
+
+#div01,
+#div02 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+#div01 {
+  top: 10px;
+  left: 10px;
+  background-color: #ffff00;
+  z-index: 10;
+}
+
+#div02 {
+  top: 50px;
+  left: 50px;
+  background-color: aqua;
+}
+
+/* 表单相关 */
+.div-input {
+  border: 2px solid #4400ff;
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin: 0.5rem;
+  width: 230px;
+}
+
+.div-input i {
+  color: #ff0000;
+  visibility: hidden;
+}
+
+.div-input input {
+  border-color: transparent;
+  outline: none;
+}
+
+.error {
+  border-color: #ff0000;
+}
+
+#divNameError {
+  padding: 0.5rem;
+  color: #ff0000;
+  /* 使元素显示位置，但不显示内容 */
+  visibility: hidden;
+}

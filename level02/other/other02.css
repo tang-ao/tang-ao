@@ -1,0 +1,18 @@
+body {
+  margin: 0px;
+}
+
+#divDnd {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 1.5rem;
+  padding: 0.5rem;
+  border: 5px solid #acbcac;
+  cursor: pointer;
+}
+
+#divDnd:hover {
+  background-color: #acbcac;
+}

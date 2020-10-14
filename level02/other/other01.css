@@ -1,0 +1,95 @@
+body {
+  margin: 0px;
+}
+
+/* 容器相对定位 */
+.container {
+  /* 屏幕全屏，删除滚动条 */
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 一级元素都是满屏加绝对定位 */
+.container > div {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  /* transform变化的过渡动画 */
+  transition: transform 1s;
+}
+
+/* 第一个子div */
+.container > div:nth-child(1) {
+  top: 0%;
+  left: 0%;
+  background-color: yellow;
+}
+
+/* 第二个子div */
+.container > div:nth-child(2) {
+  top: 0%;
+  left: 100%;
+  background-color: violet;
+}
+
+/* 第三个子div */
+.container > div:nth-child(3) {
+  top: 100%;
+  left: 0%;
+  background-color: aqua;
+}
+
+/* 第四个子div */
+.container > div:nth-child(4) {
+  top: 100%;
+  left: 100%;
+  background-color: rgb(0, 255, 128);
+}
+
+/* 第五个子div */
+.container > div:nth-child(5) {
+  top: 200%;
+  left: 0%;
+  background-color: rgb(255, 0, 128);
+}
+
+/* 移动位置的样式 */
+.move1 {
+  /* 不移动位置的效果 */
+  transform: translate(0%, 0%);
+}
+
+.move2 {
+  /* 左移一个屏幕的效果 */
+  transform: translate(-100%, 0%);
+}
+
+.move3 {
+  /* 上移一个屏幕的效果 */
+  transform: translate(0%, -100%);
+}
+
+.move4 {
+  /* 下移一个屏幕的效果 */
+  transform: translate(-100%, -100%);
+}
+
+.move5 {
+  /* 下移一个屏幕的效果 */
+  transform: translate(0%, -200%);
+}
+
+/* 导航 */
+nav {
+  position: fixed;
+  bottom: 0px;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+nav span {
+  cursor: pointer;
+}

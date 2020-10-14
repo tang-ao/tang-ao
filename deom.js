@@ -1,3 +1,3 @@
 //  javascript
 
-    alert('js你好')；
+    alert('js你好');

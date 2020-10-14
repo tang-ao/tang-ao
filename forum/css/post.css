@@ -1,0 +1,14 @@
+header {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#divList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#divList > div {
+  width: 25rem;
+  margin: 1rem;
+}

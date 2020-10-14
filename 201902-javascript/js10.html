@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第三方框架导入</title>
+  <!-- 第三方的和公用的先导入 -->
+  <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="swiper/animate.min.css">
+  <link rel="stylesheet" href="css/js10.css">
+</head>
+
+<body>
+  <div class="flex-center-box">
+    <div class="swiper-container">
+    
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <!-- 
+            class="ani"表示启用animate动画效果
+            swiper-animate-effect是animate动画名称
+            swiper-animate-duration是动画持续时长
+            swiper-animate-delay是动画延时出现时长 
+          -->
+          <div class="ani" swiper-animate-effect="wobble" swiper-animate-duration="0.5s" swiper-animate-delay="2s">哈哈哈哈</div>  
+        </div>
+        <div class="swiper-slide">嘻嘻嘻嘻</div>
+        <div class="swiper-slide">呵呵哈哈</div>
+      </div>
+
+      <!-- 如果需要导航按钮 -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+
+    </div>
+  </div>
+
+  <script src="swiper/swiper-bundle.min.js"></script>
+  <script src="swiper/swiper.animate1.0.3.min.js"></script>
+  <script src="js/js10.js"></script>
+</body>
+
+</html>

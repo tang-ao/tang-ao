@@ -1,0 +1,20 @@
+#divImages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#divImages > div {
+  width: 19%;
+  padding: 1rem;
+  border: 1px solid #131212;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+#divImages img {
+  /* 容器内的元素不超出容器大小 */
+  display: block;
+  width: 100%;
+  /* 根据宽度自动计算出合适的高度 */
+  height: auto;
+}

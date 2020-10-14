@@ -1,0 +1,43 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url('../images/04.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.mydiv {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  padding: 5rem;
+  font-size: 2rem;
+  min-height: 100vh;
+}
+
+.mydiv > div {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  border-top: 1px solid #ffffff;
+  width: 15rem;
+  height: 0rem;
+  margin: 0px 10px;
+}
+
+.top-line {
+  border-right: 2px solid #ff0000;
+  border-left: 2px solid #ff0000;
+  padding: 1rem;
+}
+
+.sj {
+  width: 0px;
+  height: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid #ffff00;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  transform: scaleY(0.8);
+}

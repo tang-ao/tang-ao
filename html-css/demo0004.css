@@ -1,0 +1,14 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-image: url('../imges/04.jpg');
+  background-size: cover;
+}
+
+/* 全屏遮罩容器 */
+.container {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  transition: background-color 1s;
+}
